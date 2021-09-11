@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "zaliczenie",
+      "setup": "",
+      "run": "chmod +x run_zal.sh; ./run_zal.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
