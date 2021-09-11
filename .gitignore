@@ -33,3 +33,5 @@
 
 # Build dir
 zal/build/*
+build/*
+*.json
