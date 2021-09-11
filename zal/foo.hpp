@@ -8,7 +8,13 @@
 
 std::vector< char > foo(std::list< Human >& people)
 {
-    std::vector< char > ret_v(people.size());
+    std::vector< char > ret_v;
+    ret_v.reserve(people.size());
+    for (auto&& p : people){
+        p.birthday();
+        p.isMonster() ? ret_v.push_back('n') : ret_v.push_back('y');
+    }
+    std::reverse(begin(ret_v), end(ret_v));
 
     // Twoja implementacja tutaj
 
